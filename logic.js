@@ -24,3 +24,22 @@ function login(){
     }
 }
 
+function admin(){
+    let admindata={
+        name:document.querySelector('#adminname').value,
+        email:document.querySelector('#adminemail').value,
+        city:document.querySelector('#admincity').value,
+        contact:document.querySelector('#admincontact').value,
+        password:document.querySelector('#adminpassword').value
+    }
+    localStorage.setItem('Admindata',JSON.stringify(admindata))
+   
+    
+    
+    
+}
+ let adminstorage=JSON.parse(localStorage.getItem('Admindata'))
+    console.log(adminstorage);
+    let adminname=document.querySelector('#admin')
+    adminname.textContent=adminstorage.name
+    console.log(adminname);
