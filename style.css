@@ -33,33 +33,9 @@ body{
     padding: 10px;
 }
 
-            /* LOGINPAGE */
 
- #loginsec{
-            text-align: center;
-            width: 50%;
-            margin: auto;
-            padding: 20px;
-            border: 2px solid black;
-            margin-top: 90px;
-            border-radius: 40px;
-            background-color: rgb(170, 255, 0);
-            color: rgb(39, 30, 30);
 
-        }
        
-#logbtn{
-           height: 30px;
-           width: 100px;
-           border-radius: 20px;
-           background-color: pink;
-
-        }     
-#loginput{
-            border-radius: 10px;
-            height: 20px;
-            width: auto;
-        }
 
             /* SIGNUP */
 
@@ -185,9 +161,10 @@ body{
     background-color: yellow;
 }
 
-        /* ADMINLOG */
+            /* LOGINPAGE LOCALUSER */
+        /* ADMINLOG -loginpage*/
 
-#usrlog{
+.usrlog{
     background-color: rgb(247, 219, 224);
     border-radius: 20px;
     width: 25%;
@@ -200,4 +177,11 @@ body{
    font-weight: bold;
     padding-top: 10vh;
     
+}
+.logbtn{
+    width: 20vh;
+    padding: 1vh;
+    font-size: 2vh;
+    border-radius: 20px;
+    background-color: darkcyan;
 }
