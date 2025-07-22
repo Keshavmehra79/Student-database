@@ -117,7 +117,6 @@ function admin(){
       
 }
    let data=localStorage.getItem('Admindata')
-   console.log(data);
    
 
 
@@ -134,4 +133,115 @@ function loginadmin(){
 
 } 
 
+//!!!!!!!!!!!!!!!!!!!JSON-Operations
+                    //for localuser
 
+                    //fetch
+async function fetchData() {
+    let data=await fetch('http://localhost:3000/userdata')
+    let res=await data.json()
+    
+    let finalData=res.map((item)=>`
+       <tr>
+       <td>${item.id}</td>
+       <td>${item.name}</td>
+       <td>${item.father}</td>
+       <td>${item.email}</td>
+       <td>${item.contact}</td>
+       <td>${item.institute}</td>
+       <td><button onclick="todelete('${item.id}')">delete</button></td>
+       
+       
+       </tr>
+    `).join(" ")
+    document.querySelector('#savedata').innerHTML=finalData
+}
+fetchData()
+
+                   //delete
+function todelete(id){
+    fetch(`http://localhost:3000/userdata/${id}`,{
+        method:"DELETE"
+    }).then(()=> alert("Deleted Succesfully"))
+
+}
+
+///////////////post
+function topostdata(){
+      let data={
+        name:document.querySelector('#name').value,
+        father:document.querySelector('#father').value,
+        email:document.querySelector('#email').value,
+        contact:document.querySelector('#contact').value,
+        institute:document.querySelector('#institute').value
+      }
+      
+      fetch('http://localhost:3000/userdata',{
+        method:"POST",
+        headers:{
+            'Content-type':'application/json'
+        },
+        body:JSON.stringify(data)
+      }).then(alert('Succesfully registerd'))
+    }
+  
+    ////////////////////EDITDATA
+
+async function fetch2(){
+    let fet=await fetch('http://localhost:3000/userdata')
+    let filt=await fet.json()
+    let showdata=filt.map((e)=>`
+    <tr>
+       <td>${e.id}</td>
+       <td>${e.name}</td>
+       <td>${e.father}</td>
+       <td>${e.email}</td>
+       <td>${e.contact}</td>
+       <td>${e.institute}</td>
+       <td><button onclick="myedit('${e.id}')">Edit Details</button>
+       </tr>
+    `).join(" ")
+
+    document.querySelector('#showdata').innerHTML=showdata
+}
+fetch2()
+
+ async function myedit(id){
+    let fet=await fetch(`http://localhost:3000/userdata/${id}`)
+
+    let data=await fet.json()
+    let userinput=`<h1> Edit Your data</h1>
+    <input type="text" value='${data.id}' readonly id="id1"><br><br>
+    <input type="text" value='${data.name}' id="name1" ><br><br>
+    <input type="text" value='${data.father}' id="father1"><br><br>
+    <input type="text" value='${data.email}' id="email1" ><br><br>
+    <input type="text" value='${data.contact}' id="contact1"><br><br>
+    <input type="text" value='${data.institute}' id="institute1"><br><br>
+
+    <input type="submit" onclick="finaledit('${data.id}')" ><br><br>
+
+
+    `    
+    document.querySelector('#editform').innerHTML=userinput
+}
+
+const finaledit= (id)=>{
+    let fet2= fetch(`http://localhost:3000/userdata/${id}`)
+    let newdata={
+            id:document.querySelector('#id1').value,
+            name:document.querySelector('#name1').value,
+            father:document.querySelector('#father1').value,
+            email:document.querySelector('#email1').value,
+            contact:document.querySelector('#contact1').value,
+            institute:document.querySelector('#institute1').value,
+
+    }
+    fetch(`http://localhost:3000/userdata/${id}`,{
+        method:"PUT",
+        headers:{
+            "content-type":"application/json"
+        },
+        body:JSON.stringify(newdata)
+    }).then( alert("Edited Succefully!!!!!!!!!!"))
+        
+}
