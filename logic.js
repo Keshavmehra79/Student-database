@@ -149,7 +149,7 @@ async function fetchData() {
        <td>${item.email}</td>
        <td>${item.contact}</td>
        <td>${item.institute}</td>
-       <td><button onclick="todelete('${item.id}')">delete</button></td>
+       <td><button onclick="todelete('${item.id}')" id="deletebtn">delete</button></td>
        
        
        </tr>
@@ -198,7 +198,7 @@ async function fetch2(){
        <td>${e.email}</td>
        <td>${e.contact}</td>
        <td>${e.institute}</td>
-       <td><button onclick="myedit('${e.id}')">Edit Details</button>
+       <td><button onclick="myedit('${e.id}')" class="editbtn">Edit Details</button>
        </tr>
     `).join(" ")
 
@@ -208,7 +208,8 @@ fetch2()
 
  async function myedit(id){
     let fet=await fetch(`http://localhost:3000/userdata/${id}`)
-
+     let form=document.querySelector('#editform')
+     form.removeAttribute('style')
     let data=await fet.json()
     let userinput=`<h1> Edit Your data</h1>
     <input type="text" value='${data.id}' readonly id="id1"><br><br>

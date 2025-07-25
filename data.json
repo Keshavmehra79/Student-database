@@ -2,7 +2,7 @@
   "userdata": [
     {
       "id": "d89a",
-      "name": "hkkjh",
+      "name": "Rani",
       "father": "M mehra",
       "email": "mehrakeshav332@gmail.com",
       "contact": "hjhrjr",
@@ -25,14 +25,6 @@
       "institute": "d"
     },
     {
-      "id": "6972",
-      "name": "Keshav Mehara",
-      "father": "wewhfvf",
-      "email": "mehrakeshav332@gmail.com",
-      "contact": "1234567890",
-      "institute": "jjhk"
-    },
-    {
       "id": "2942",
       "name": "Keshav Mehara",
       "father": "wewhfvf",
@@ -49,14 +41,6 @@
       "institute": "qwe"
     },
     {
-      "id": "133b",
-      "name": "money heist",
-      "father": "wewhfvf",
-      "email": "mehrakeshav332@gmail.com",
-      "contact": "354456453765",
-      "institute": "d"
-    },
-    {
       "id": "ca1b",
       "name": "keshav",
       "father": "wewhfvf",
@@ -65,12 +49,68 @@
       "institute": "d"
     },
     {
-      "id": "5b26",
-      "name": "money heist",
-      "father": "wewhfvf",
-      "email": "mehrakeshav332@gmail.com",
-      "contact": "9926",
-      "institute": "jjhk"
+      "id": "778d",
+      "name": "Arjun wishvkarma",
+      "father": "gopal",
+      "email": "arjun@gmail.com",
+      "contact": "9575548110",
+      "institute": "corporate college bhopal"
+    },
+    {
+      "id": "f331",
+      "name": "Nancy",
+      "father": "gopal",
+      "email": "mehranancy456@gmail.com",
+      "contact": "6876****7767",
+      "institute": "NRI gruo of institue "
+    },
+    {
+      "id": "611e",
+      "name": "Shubham",
+      "father": "Pata nahi",
+      "email": "bopcche756234@gamil.com",
+      "contact": "9876543***",
+      "institute": "Sistec"
+    },
+    {
+      "id": "fb41",
+      "name": "rajnikant",
+      "father": "pata nahi",
+      "email": "rajni@578gmail.com",
+      "contact": "1234567890",
+      "institute": "Sistec"
+    },
+    {
+      "id": "e6fd",
+      "name": "deepak",
+      "father": "pata nahi",
+      "email": "deepakrajpot@76gmail.com",
+      "contact": "1234567890",
+      "institute": "Rgi bhopal"
+    },
+    {
+      "id": "00cc",
+      "name": "hariom",
+      "father": "Pata nahi",
+      "email": "hariom@8797gamil.com",
+      "contact": "1234567890",
+      "institute": "RGI bhopal"
+    },
+    {
+      "id": "0484",
+      "name": "Abhishek",
+      "father": "harisingh",
+      "email": "kaharabhishek@gmail.com",
+      "contact": "6266196599",
+      "institute": "BITS"
+    },
+    {
+      "id": "e8bb",
+      "name": "lalit",
+      "father": "Pata nahi",
+      "email": "takarkarlalit@gmail.com",
+      "contact": "1234567890",
+      "institute": "betul"
     }
   ]
 }

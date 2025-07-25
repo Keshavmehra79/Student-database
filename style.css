@@ -185,3 +185,74 @@ body{
     border-radius: 20px;
     background-color: darkcyan;
 }
+
+
+                    /* Localuser page */
+
+#textonpage{
+    font-style: italic;
+    color: red;
+}
+
+.datatable{
+       width: 80%;
+       /* border-collapse : 10vh; */
+       text-align: center;
+       padding: 10px;
+       margin-left: 20vh;
+}
+th{
+   background-color: #f2f2;
+}
+
+#deletebtn{
+    margin: 10px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.editbtn{
+   padding: 2px;
+   margin: 2px;
+   border-radius: 5px;
+   background-color: greenyellow;
+   color: brown;
+   
+}
+#editform{
+    border: 2px solid black;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#REGISTERFORM{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: white;
+    text-align: center;
+    font-style: italic;
+    border-radius: 80px;
+}
+
+                    /* Responsivness */
+
+@media  screen and (max-width:700px){
+    .div{
+        margin-left: 0;
+    }
+   .datatable{
+    margin: 0;
+    padding: 0;
+   
+   }
+
+}
