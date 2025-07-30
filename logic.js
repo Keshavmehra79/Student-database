@@ -219,7 +219,7 @@ fetch2()
     <input type="text" value='${data.contact}' id="contact1"><br><br>
     <input type="text" value='${data.institute}' id="institute1"><br><br>
 
-    <input type="submit" onclick="finaledit('${data.id}')" ><br><br>
+    <input type="submit" class="logbtn" onclick="finaledit('${data.id}')" ><br><br>
 
 
     `    

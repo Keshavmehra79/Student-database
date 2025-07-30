@@ -9,14 +9,6 @@
       "institute": "BITS"
     },
     {
-      "id": "0ee3",
-      "name": "Di sharma",
-      "father": "wewhfvf",
-      "email": "hkhjkhk",
-      "contact": "9926",
-      "institute": "jjhk"
-    },
-    {
       "id": "4dc2",
       "name": "keshav",
       "father": "wewhfvf",
@@ -111,6 +103,14 @@
       "email": "takarkarlalit@gmail.com",
       "contact": "1234567890",
       "institute": "betul"
+    },
+    {
+      "id": "be9c",
+      "name": "Diksha",
+      "father": "pata nahi",
+      "email": "billthariya@gmail.com",
+      "contact": "pata nahi",
+      "institute": "govt.higher secondry girls school bareli"
     }
   ]
 }

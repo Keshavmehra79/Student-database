@@ -254,5 +254,11 @@ th{
     padding: 0;
    
    }
-
+  .usrlog{
+  margin: auto;
+  height: 35vh;
+  margin-top: 10px;
+  width: 400px;
+    
+}
 }
