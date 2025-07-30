@@ -56,6 +56,8 @@ function login(){
     let e1=document.querySelector('#logem').value
     let p1=document.querySelector('#logpass').value
     let pass=localStorage.getItem('password')
+    console.log(pass);
+    
     let e=localStorage.getItem('Email')
     if(!(e1==e) ||!(p1==pass)){
         alert("User Not found!please Try Again")
